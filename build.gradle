@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.umb.taller'
+version = '1.0.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Logging (necesario para la jerarquía de excepciones - Sesión 2)
+    implementation 'org.slf4j:slf4j-api:2.0.13'
+    implementation 'org.slf4j:slf4j-simple:2.0.13'
+
+    // Pruebas unitarias (necesario para Sesión 2 - JUnit 5 + AssertJ)
+    testImplementation platform('org.junit:junit-bom:5.10.2')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.assertj:assertj-core:3.26.3'
+}
+
+test {
+    useJUnitPlatform()
+}
