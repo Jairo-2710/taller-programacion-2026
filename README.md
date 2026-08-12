@@ -11,6 +11,14 @@ Technical Scope
 
 The project follows a Maven-style directory layout (domain, infrastructure, application, test) and applies the six pillars of OOP: abstraction, encapsulation, inheritance, polymorphism, association, and cohesion. It also incorporates the five SOLID principles, a custom exception hierarchy, and functional interfaces using lambda expressions and method references. Unit tests are written using JUnit 5 and AssertJ.
 
+
+     ## Session 2 additions
+     Applied SOLID principles (SRP, OCP, LSP, ISP, DIP), implemented a
+     3-level custom exception hierarchy with SLF4J logging, a functional
+     interface with lambda expressions, and Dependency Inversion through
+     a generic Repository<T, ID> interface. Includes 5 passing unit tests
+     with JUnit 5 and AssertJ.
+     
 Team
 Jairo Esteban Ojeda Ramirez
 Institution: Manuela Beltran University
