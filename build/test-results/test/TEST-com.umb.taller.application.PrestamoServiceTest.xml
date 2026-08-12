@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.umb.taller.application.PrestamoServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-08-12T02:06:44.157Z" hostname="DESKTOP-CHK5RHA" time="0.056">
+  <properties/>
+  <testcase name="devolverPrestamoDeberiaLiberarElMaterial()" classname="com.umb.taller.application.PrestamoServiceTest" time="0.033"/>
+  <testcase name="jerarquiaDeExcepcionesDeberiaExtenderAppException()" classname="com.umb.taller.application.PrestamoServiceTest" time="0.008"/>
+  <testcase name="deberiaLanzarExcepcionCuandoMaterialNoEstaDisponible()" classname="com.umb.taller.application.PrestamoServiceTest" time="0.002"/>
+  <testcase name="deberiaLanzarExcepcionCuandoUsuarioExcedeLimiteDePrestamos()" classname="com.umb.taller.application.PrestamoServiceTest" time="0.001"/>
+  <testcase name="deberiaCrearPrestamoCuandoMaterialDisponibleYUsuarioSinLimite()" classname="com.umb.taller.application.PrestamoServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] WARN com.umb.taller.domain.exception.MaterialNoDisponibleException - MaterialNoDisponibleException: prueba
+[Test worker] WARN com.umb.taller.domain.exception.MaterialNoDisponibleException - MaterialNoDisponibleException: El material 'Clean Code' no está disponible.
+[Test worker] WARN com.umb.taller.domain.exception.LimitePrestamosExcedidoException - LimitePrestamosExcedidoException: El usuario Jairo Esteban Ojeda ya alcanzó el límite de préstamos.
+]]></system-err>
+</testsuite>
